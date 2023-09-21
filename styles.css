@@ -1,0 +1,505 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  color: white;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-image: url("./img/wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#main-title {
+  font-size: 3rem;
+  font-weight: bolder;
+  font-style: italic;
+}
+header {
+  top: 0px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 30px 15px;
+  width: 100%;
+  height: 180px;
+  position: fixed;
+  z-index: 1;
+}
+header > nav > div#menu > ul > li {
+  display: inline-block;
+  margin: 35px 2% 0px 2%;
+  font-size: 20px;
+  font-weight: 600;
+}
+header > nav > ul > li > a:hover {
+  color: rgba(66, 0, 247, 0.851);
+}
+
+#check {
+  display: none;
+}
+
+.checkbtn {
+  font-size: 40px;
+  color: white;
+  float: right;
+  /* line-height: 80px; */
+  margin-top: 38px;
+  margin-right: 35px;
+  cursor: pointer;
+  display: none;
+}
+.checkbtn:hover {
+  color: rgb(197, 8, 197);
+}
+
+p {
+  font-size: 20px;
+  text-align: justify;
+  width: 45%;
+}
+
+main {
+  position: relative;
+  top: 200px;
+  width: 100%;
+  color: black;
+}
+
+#knowledge {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.231);
+  width: 80%;
+  margin: 10px auto;
+  padding: 35px;
+  border-radius: 12px;
+}
+#knowledge > h2 {
+  margin-bottom: 20px;
+}
+
+footer {
+  position: relative;
+  top: 210px;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  clear: both;
+}
+footer > section h2 {
+  font-size: 35px;
+}
+
+.social-networks {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+#github-logo {
+  width: 50px;
+}
+
+#x-logo {
+  width: 50px;
+}
+
+#instagram-logo {
+  width: 50px;
+}
+
+#linkedin-logo {
+  width: 50px;
+}
+
+#whatsapp-logo {
+  width: 50px;
+}
+
+/* profile photo style */
+
+#profile-photo {
+  display: inline-block;
+  width: 30%;
+  border-radius: 10px;
+}
+
+#about-me {
+  padding: 35px 0px;
+  margin: 30px auto;
+  width: 80%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.231);
+  border-radius: 12px;
+}
+
+section#about-me h2 {
+  margin-bottom: 50px;
+  margin-left: 25px;
+}
+
+section#about-me div img,
+section#about-me div p {
+  display: inline-block;
+  margin: 0px 5%;
+  vertical-align: top;
+  font-size: 2.1vh;
+}
+
+ul {
+  list-style: none;
+}
+ul.social-networks li {
+  display: inline;
+  margin: 10px;
+}
+/* ul.social-networks li a img {
+  height: 50px;
+  width: 50px;
+} */
+
+.fuente-clara {
+  color: #eeeeee;
+}
+
+.fuente-oscura {
+  color: #000000;
+}
+
+.fuente-acento {
+  color: rgb(255, 255, 255);
+}
+
+.banner {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.spacing {
+  margin: 10px;
+  padding: 10px;
+}
+
+.html-logo {
+  width: 100% !important;
+}
+
+ol#stack-logos {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+ol#stack-logos li {
+  flex-basis: 120px;
+  align-self: center;
+}
+
+#frameworks {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: center;
+}
+#frameworks > img {
+  width: 120px;
+  margin: 18px;
+}
+
+.light-color {
+  background-color: rgba(172, 152, 244, 0.694);
+}
+
+.center {
+  text-align: center;
+}
+
+.logo-stack {
+  width: 110px;
+}
+
+#projects-container {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.494);
+  width: 80%;
+  margin: 10px 10%;
+  padding: 0 30px;
+  border-radius: 12px;
+  top: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#projects-container > div > h2 {
+  padding-left: 22px;
+  padding-top: 22px;
+}
+
+#form-container {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.494);
+  width: 80%;
+  padding: 2% 5%;
+  margin: 25px 10%;
+  border-radius: 12px;
+  top: 190px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-container {
+  width: 100%;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  column-gap: 18px;
+  row-gap: 100px;
+}
+
+.card {
+  width: 210px;
+  border-radius: 18px;
+  overflow: hidden;
+  padding-bottom: 15px;
+  background-color: #1078c3;
+}
+
+.card > h3 {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.card > p {
+  margin-top: 15px;
+  font-size: 14px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: left;
+  width: 100%;
+}
+
+.card > img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.form-header {
+  text-align: center;
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  margin: 10px auto;
+  padding: 50px;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  border-radius: 14px;
+  width: 95%;
+  margin: 0px auto;
+  padding: 35px;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 6px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+  width: 100%;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #0077ff;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #0064d6;
+}
+
+.form-row button:active {
+  background-color: #0077ff;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+  /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+  #main-title {
+    font-size: 2.8rem;
+    font-weight: bolder;
+    font-style: italic;
+    margin-right: 100px;
+    position: absolute;
+  }
+
+  header > nav ul {
+    background-color: rgba(59, 20, 121, 0.927);
+    position: fixed;
+    width: 100%;
+    margin: 150px 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 100%;
+    transition: all 0.5s;
+  }
+
+  /* #check:checked ~ div#menu ul {
+    left: 0%;
+  } */
+
+  .active {
+    left: 0%;
+  }
+
+  header > nav > div#menu > ul > li {
+    font-size: 35px;
+    margin-bottom: 45px;
+  }
+
+  header {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 30px 15px;
+    width: 100%;
+    height: 180px;
+    position: fixed;
+    z-index: 1;
+  }
+  main {
+    position: relative;
+    top: 145px;
+    width: 100%;
+    color: black;
+  }
+  section#about-me div p {
+    display: block;
+    margin: 20px 5%;
+    width: 90%;
+    font-size: 2.1vh;
+  }
+  #profile-photo {
+    /* float: left; */
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    border-radius: 10px;
+  }
+
+  #projects-container {
+    width: 95%;
+    margin: 0px 2.5%;
+    padding: 0px 2.5%;
+  }
+
+  #form-container {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.494);
+    width: 95%;
+    padding: 2% 5%;
+    margin: 25px auto;
+    border-radius: 12px;
+    top: 190px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #knowledge {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.231);
+    width: 95%;
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  #about-me {
+    padding: 35px 0px;
+    margin: 40px auto;
+    width: 95%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.231);
+    border-radius: 12px;
+  }
+  .checkbtn {
+    display: block;
+  }
+}
+.alertas {
+  color: red;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.7vh;
+}

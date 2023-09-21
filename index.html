@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c9b87a4bee.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Daniel - Portafolio</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="main-title" class="fuente-clara">Bienvenido a mi portafolio</h1>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <div id="menu">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre Mi</a></li>
+            <li><a href="#knowledge">Mis Conocimientos</a></li>
+            <li><a href="#footer">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="about-me">
+        <h2>Sobre Mi</h2>
+        <div>
+          <img id="profile-photo" src="img/daniel.jpg" alt="foto Daniel" />
+          <p id="about-me-paragraph" class="fuente-clara">
+            Mi nombre es Daniel Alejandro, soy programador fullstack tengo 24
+            años, he trabajado en la industria de la tecnologia programando ya
+            por más de 3 años y actualmente busco fortalecer mis conocimientos
+            previos y conocer más personas apasionadas por el mundo de la
+            tecnología
+          </p>
+        </div>
+      </section>
+
+      <section id="knowledge">
+        <h2>Mis Conocimientos</h2>
+        <img src="img/neo2.jpg" class="banner" />
+        <div class="light-color fuente-oscura center">
+          <h3 class="spacing fuente-clara">Stack de tecnologias</h3>
+          <ol id="stack-logos">
+            <li>
+              <img class="html-logo" src="img/htmllogo.png" />
+            </li>
+            <li><img class="html-logo" src="img/csslogo.png" /></li>
+            <li><img class="html-logo" src="img/jslogo.png" /></li>
+            <li><img class="html-logo" src="img/pythonlogo.png" /></li>
+          </ol>
+
+          <h4>Frameworks</h4>
+          <div id="frameworks">
+            <img src="img/reactlogo.webp" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <section id="projects-container">
+      <div>
+        <h2>Mis proyectos</h2>
+      </div>
+      <div class="cards-container">
+        <div class="card">
+          <img src="img/test.jpeg" />
+          <h3>My own shell</h3>
+          <p>Descripcion del proyecto</p>
+        </div>
+        <div class="card">
+          <img src="img/test.jpeg" />
+          <h3>AirBnB clone</h3>
+          <p>Descripcion del proyecto</p>
+        </div>
+        <div class="card">
+          <img src="img/test.jpeg" />
+          <h3>Miscua Covid Tracker</h3>
+          <p>Descripcion del proyecto</p>
+        </div>
+        <div class="card">
+          <img src="img/test.jpeg" />
+          <h3>Museo "Coalico"</h3>
+          <p>Descripcion del proyecto</p>
+        </div>
+        <div class="card">
+          <img src="img/test.jpeg" />
+          <h3>Adler Social App</h3>
+          <p>Descripcion del proyecto</p>
+        </div>
+        <div class="card">
+          <img src="img/test.jpeg" />
+          <h3>Adler Social Suite</h3>
+          <p>Descripcion del proyecto</p>
+        </div>
+        <div class="card">
+          <img src="img/test.jpeg" />
+          <h3>Adler Social Suite</h3>
+          <p>Descripcion del proyecto</p>
+        </div>
+        <div class="card">
+          <img src="img/test.jpeg" />
+          <h3>Launch Mobility - MC (Mission Control)</h3>
+          <p>Descripcion del proyecto</p>
+        </div>
+      </div>
+    </section>
+    <section id="form-container">
+      <div>
+        <h2>¡Charlemos!</h2>
+      </div>
+        <form action="" id="form" method="get" class="formulario">
+          <div class="form-row">
+            <label for="nombre">Tu nombre</label>
+            <input id="nombre" name="nombre" type="text" />
+          </div>
+          <div class="form-row">
+            <label for="email">Tu email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="pepe@gmail.com"
+            />
+          </div>
+          <div class="form-row">
+            <label for="mensaje">Dejame un mensaje</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+          <div class="form-row">
+            <button>Enviar</button>
+          </div>
+          <p class="alertas" id="alertas"></p>
+        </form>
+      </footer>
+    </section>
+
+    <footer id="footer">
+      <section>
+        <h2>Contacto</h2>
+        <ul class="social-networks">
+          <li>
+            <a target="_blank" href="https://github.com/Gomba66"
+              ><img id="github-logo" src="img/github.png"
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/Gomba66"
+              ><img id="x-logo" src="img/x.png"
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://instagram.com/Gomba66"
+              ><img id="instagram-logo" src="img/Instagram_logo_2016.svg.webp"
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/danielsoft/"
+              ><img id="linkedin-logo" src="img/linkedin.webp"
+            /></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://wa.me/573203468851?text=Hola Daniel, vi tu portafolio!"
+              ><img id="linkedin-logo" src="img/whatsapp.webp"
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <span class="fuente-acento"
+        >Creado por Daniel Ramirez - Todos los derechos reservados &copy;</span
+      >
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
